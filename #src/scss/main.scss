@@ -1,0 +1,100 @@
+.main {
+    flex: 1 1 auto;
+}
+.page-block {
+    background: #161D2F;
+}
+.page-block__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.page-block__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-top: 131px;
+    margin-bottom: 10px;
+    @media(max-width: 599px) {
+        font-size: 12px;
+        line-height: 0px;
+    }
+}
+.page-block__title {
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 93px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    @media(max-width: 799px) {
+        font-size: 45px;
+        line-height: 70px;
+    }
+    @media(max-width: 599px) {
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
+.page-block__subtitle {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    @media(max-width: 799px) {
+        font-size: 12px;
+        line-height: 25px;
+    }
+}
+.page-block__buttons {
+    display: flex;
+    width: 334px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    @media(max-width: 799px) {
+        width: 310px;
+    }
+    @media(max-width: 599px) {
+        width: 220px;
+    }
+}
+.page-block__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 157px;
+    height: 53px;
+    background: linear-gradient(97.1deg, #3043A9 11.99%, #1F629F 96.6%);
+    border-radius: 28px;
+    line-height: 27px;
+    font-size: 18px;
+    color: #fff;
+    @media(max-width: 799px) {
+        width: 145px;
+        height: 40px;
+        font-size: 16px;
+    }
+    @media(max-width: 599px) {
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+.page-block__btn_border {
+    background: none;
+    border: 1px solid #FFFFFF;
+}
+.page-block__video{
+    max-width: 1110px;
+    max-height: 600px;
+}
+.page-block__video > video {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
