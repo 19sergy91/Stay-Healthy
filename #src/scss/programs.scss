@@ -1,0 +1,128 @@
+.programs {
+    display: block;
+}
+.programs__container {
+    text-align: center;
+    margin-top: 100px;
+}
+.programs__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #262626;
+}
+.programs__subtitle {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #222222;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.programs__slider {
+    position: relative;
+}
+.slider__item {
+    text-align: start;
+}
+.slider__img {
+    max-width: 100%;
+    border-radius: 5%;
+}
+.slider__title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    color: #222222;
+    margin-left: 20px;
+}
+.slider__subtitle {
+    font-size: 14px;
+    line-height: 26px;
+    color: #222222;
+    margin-left: 20px;
+}
+.slider__text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #4B4B4B;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.slider__link {
+    display: flex;
+    width: 200px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3043A9;
+    margin-left: 20px;
+
+    button {
+        background: url('../img/programs/arrow-back.svg') center no-repeat;
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+        cursor: pointer;
+        transition: all 0.2s ease 0s;
+    }
+    button:hover {
+        background-color: #1f619f52;
+        border-radius: 50%;
+    }
+}
+
+
+/* Слайдер */
+.slick-slider{
+    display: flex;
+    align-items: center;
+}
+/* Слайд */
+.slick-slide{
+    position: relative;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+/* Стрелка */
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    font-size: 0;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+    background: url('../img/programs/arrow-left.svg') center no-repeat;
+    left: -70px;
+}
+.slick-arrow.slick-prev:hover{
+    background-color: #1F629F;
+    border-radius: 50%;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+    background: url('../img/programs/arrow-right.svg') center no-repeat;
+    right: -70px;
+}
+.slick-arrow.slick-next:hover{
+    background-color: #1F629F;
+    border-radius: 50%;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{
+    opacity: 50%;
+    box-shadow: none;
+}

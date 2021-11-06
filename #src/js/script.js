@@ -14,3 +14,12 @@ if (burgerMenu) {
         headerMenu.classList.toggle("_menu");
     });
 };
+
+$('.programs__slider').slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    adaptiveHeight: true,
+    draggable: false,
+    swipe: true,
+  });

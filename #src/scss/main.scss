@@ -91,10 +91,10 @@
 }
 .page-block__video{
     max-width: 1110px;
-    max-height: 600px;
-}
-.page-block__video > video {
-    max-width: 100%;
-    border-radius: 20px;
     margin-bottom: 50px;
+}
+.page-block__video video {
+    max-width: 100%;
+    max-height: 600px;
+    border-radius: 20px;  
 }
