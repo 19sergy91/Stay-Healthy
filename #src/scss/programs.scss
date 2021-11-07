@@ -4,12 +4,18 @@
 .programs__container {
     text-align: center;
     margin-top: 100px;
+    @media(max-width: 900px) {
+        margin-top: 30px;
+    }
 }
 .programs__title {
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     color: #262626;
+    @media(max-width: 599px) {
+        line-height: 0px;
+    }
 }
 .programs__subtitle {
     font-size: 40px;
@@ -19,12 +25,20 @@
     text-transform: capitalize;
     margin-top: 10px;
     margin-bottom: 30px;
+    @media(max-width: 599px) {
+        line-height: 50px;
+        font-size: 30px;
+    }
 }
 .programs__slider {
     position: relative;
+    margin-bottom: 100px;
 }
 .slider__item {
     text-align: start;
+    @media(max-width: 599px) {
+        text-align: center;
+    }
 }
 .slider__img {
     max-width: 100%;
@@ -36,12 +50,41 @@
     line-height: 45px;
     color: #222222;
     margin-left: 20px;
+    @media(max-width: 1071px) {
+        font-size: 25px;
+    }
+    @media(max-width: 915px) {
+        font-size: 20px;
+    }
+    @media(max-width: 900px) {
+        font-size: 30px;
+    }
+    @media(max-width: 726px) {
+        font-size: 20px;
+    }
+    @media(max-width: 599px) {
+        font-size: 30px;
+        margin: 0;
+    }
 }
 .slider__subtitle {
     font-size: 14px;
     line-height: 26px;
     color: #222222;
     margin-left: 20px;
+    @media(max-width: 915px) {
+        font-size: 12px;
+    }
+    @media(max-width: 900px) {
+        font-size: 14px;
+    }
+    @media(max-width: 726px) {
+        font-size: 12px;
+    }
+    @media(max-width: 599px) {
+        font-size: 14px;
+        margin: 0;
+    }
 }
 .slider__text {
     font-size: 14px;
@@ -51,6 +94,22 @@
     margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 20px;
+    @media(max-width: 1071px) {
+        font-size: 12px;
+    }
+    @media(max-width: 915px) {
+        font-size: 11px;
+    }
+    @media(max-width: 900px) {
+        font-size: 12px;
+    }
+    @media(max-width: 620px) {
+        font-size: 11px;
+    }
+    @media(max-width: 599px) {
+        font-size: 12px;
+        margin: 0;
+    }
 }
 .slider__link {
     display: flex;
@@ -59,7 +118,7 @@
     line-height: 20px;
     color: #3043A9;
     margin-left: 20px;
-
+    
     button {
         background: url('../img/programs/arrow-back.svg') center no-repeat;
         width: 20px;
@@ -72,6 +131,12 @@
         background-color: #1f619f52;
         border-radius: 50%;
     }
+    @media(max-width: 599px) {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
 }
 
 
@@ -79,6 +144,8 @@
 .slick-slider{
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 /* Слайд */
 .slick-slide{
@@ -102,24 +169,33 @@
     height: 45px;
     cursor: pointer;
     transition: all 0.2s ease 0s;
+    z-index: 5;
+    @media(max-width: 726px) {
+        width: 30px;
+        height: 30px;
+    }
 }
 /* Стрелка влево */
 .slick-arrow.slick-prev{
     background: url('../img/programs/arrow-left.svg') center no-repeat;
     left: -70px;
-}
-.slick-arrow.slick-prev:hover{
-    background-color: #1F629F;
-    border-radius: 50%;
+    @media(max-width: 1245px) {
+        left: 0px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        border: 2px solid #000;
+    }
 }
 /* Стрелка вправо */
 .slick-arrow.slick-next{
     background: url('../img/programs/arrow-right.svg') center no-repeat;
     right: -70px;
-}
-.slick-arrow.slick-next:hover{
-    background-color: #1F629F;
-    border-radius: 50%;
+    @media(max-width: 1245px) {
+        right: 0px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        border: 2px solid #000;
+    }
 }
 /* Стрелка не активная */
 .slick-arrow.slick-disabled{

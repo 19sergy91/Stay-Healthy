@@ -1,0 +1,200 @@
+.nutritions {
+    margin-bottom: 100px;
+    @media(max-width: 799px) {
+        margin-top: -50px;
+        margin-bottom: 0px;
+    }
+}
+.nutritions__container {
+    display: flex;
+    @media(max-width: 799px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.nutritions__images {
+    position: relative;
+    min-width: 605px;
+    min-height: 484px;
+    @media(max-width: 939px) {
+        min-width: 400px;
+        min-height: 370px;
+    }
+    @media(max-width: 799px) {
+        min-width: 400px;
+        min-height: 400px;
+    }
+    @media(max-width: 599px) {
+        min-width: 300px;
+        min-height: 300px;
+    }
+    @media(max-width: 425px) {
+        min-width: 200px;
+        min-height: 200px;
+    }
+}
+.nutritions__images-onepic {
+    position: absolute;
+    margin-left: 100px;
+    @media(max-width: 939px) {
+        width: 350px;
+        margin-left: 50px;
+    }
+    @media(max-width: 799px) {
+        width: 100%;
+    }
+    @media(max-width: 320px) {
+        margin-left: 30px;
+    }
+}
+.nutritions__images-twopic {
+    position: absolute;
+    bottom: 0;
+    @media(max-width: 939px) {
+        width: 350px;
+    }
+    @media(max-width: 799px) {
+        width: 100%;
+        margin-left: -50px;
+    }
+    @media(max-width: 320px) {
+        margin-left: -30px;
+    }
+}
+.nutritions__images-labelone {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 60px;
+    background: #161D2F;
+    border-radius: 10px;
+    filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.15));
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #FFFFFF;
+    @media(max-width: 939px) {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+    }
+    @media(max-width: 425px) {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+        img {
+            width: 20px;
+        }
+    }
+}
+.nutritions__images-labeltwo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    margin-left: 405px;
+    width: 200px;
+    height: 60px;
+    background: #262626;
+    border-radius: 10px;
+    filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.15));
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #FFFFFF;
+    @media(max-width: 939px) {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+        margin-left: 300px;
+    }
+    @media(max-width: 599px) {
+        margin-left: 200px;
+    }
+    @media(max-width: 425px) {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+        line-height: 15px;
+        margin-left: 100px;
+        img {
+            width: 15px;
+            margin: 0px 5px;
+        }
+    }
+}
+.nutritions__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-left: 60px;
+    @media(max-width: 799px) {
+        align-items: center;
+        text-align: center;
+        margin: 30px 0px;
+    }
+}
+.nutritions__info-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #222222;
+    @media(max-width: 939px) {
+        font-size: 12px;
+        line-height: 10px;
+    }
+}
+.nutritions__info-subtitle {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #161D2F;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    @media(max-width: 939px) {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+.nutritions__info-text {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #222222;
+    margin-bottom: 30px;
+    @media(max-width: 939px) {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+.nutritions__info-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 157px;
+    height: 53px;
+    background: linear-gradient(97.1deg, #3043A9 11.99%, #1F629F 96.6%);
+    border-radius: 28px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #FFFFFF;
+    @media(max-width: 799px) {
+        width: 145px;
+        height: 40px;
+        font-size: 16px;
+    }
+    @media(max-width: 599px) {
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
