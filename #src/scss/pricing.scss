@@ -1,4 +1,7 @@
 .pricing {
+    @media(max-width: 499px) {
+        margin-bottom: -50px;
+    }
 }
 .pricing__background {
     background: linear-gradient(90deg, #09203F 0%, #161D2F 100%);

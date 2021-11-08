@@ -107,7 +107,7 @@
         font-size: 11px;
     }
     @media(max-width: 599px) {
-        font-size: 12px;
+        font-size: 14px;
         margin: 0;
     }
 }
@@ -118,7 +118,7 @@
     line-height: 20px;
     color: #3043A9;
     margin-left: 20px;
-    
+    justify-content: space-between;
     button {
         background: url('../img/programs/arrow-back.svg') center no-repeat;
         width: 20px;
@@ -133,9 +133,10 @@
     }
     @media(max-width: 599px) {
         width: 100%;
+        font-size: 16px;
         align-items: center;
-        justify-content: center;
-        margin: 0;
+        justify-content: space-evenly;
+        margin: 20px 0px 0px 0px;
     }
 }
 
@@ -181,7 +182,7 @@
     left: -70px;
     @media(max-width: 1245px) {
         left: 0px;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgb(255, 255, 255);
         border-radius: 50%;
         border: 2px solid #000;
     }
@@ -192,7 +193,7 @@
     right: -70px;
     @media(max-width: 1245px) {
         right: 0px;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgb(255, 255, 255);
         border-radius: 50%;
         border: 2px solid #000;
     }
