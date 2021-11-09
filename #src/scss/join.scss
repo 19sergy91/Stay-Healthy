@@ -1,4 +1,9 @@
 .join {
+    display: block;
+    margin-bottom: 100px;
+    @media(max-width: 799px) {
+        margin-bottom: 50px;
+    }
 }
 .join__container {
     padding: 5px;

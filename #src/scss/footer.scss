@@ -1,0 +1,210 @@
+.footer {
+    border-top: 1px solid #E5E5E5;
+    @media(max-width: 599px) {
+        position: relative;
+    }
+}
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 0px 88px 0px;
+    @media(max-width: 799px) {
+        padding: 20px 0px 30px 0px;
+    }
+    @media(max-width: 599px) {
+        padding-top: 150px;
+        width: 100%;
+        display: flex;
+    }
+}
+.footer__info {
+    display: block;
+    padding-right: 10px;
+    @media(max-width: 599px) {
+        position: absolute;
+        top: 0;
+    }
+}
+.footer__info-title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    color: #161D2F;
+    @media(max-width: 799px) {
+        font-size: 20px;
+    }
+    @media(max-width: 599px) {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+}
+.footer__info-subtitle {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #222222;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    @media(max-width: 799px) {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    @media(max-width: 599px) {
+        width: 100%;
+        text-align: center;
+    }
+}
+.footer__social {
+    display: flex;
+    @media(max-width: 599px) {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+.footer__social-link:not(:last-child) {
+    margin: 0px 10px 0px 0px;
+    @media(max-width: 599px) {
+        margin: 0;
+    }
+}
+.footer__product {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+.footer__product-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #161D2F;
+    margin-bottom: 20px;
+    @media(max-width: 799px) {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    @media(max-width: 599px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+.footer__product-link {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222222;
+    @media(max-width: 799px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    @media(max-width: 599px) {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+.footer__product-link:not(:last-child){
+    margin: 0px 0px 10px 0px;
+    @media(max-width: 599px) {
+        margin: 0px 0px 5px 0px;
+    }
+}
+.footer__explore {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+.footer__explore-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #161D2F;
+    margin-bottom: 20px;
+    @media(max-width: 799px) {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    @media(max-width: 599px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+.footer__explore-link {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222222;
+    @media(max-width: 799px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    @media(max-width: 599px) {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+.footer__explore-link:not(:last-child){
+    margin: 0px 0px 10px 0px;
+    @media(max-width: 599px) {
+        margin: 0px 0px 5px 0px;
+    }
+}
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+.footer__contact-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #161D2F;
+    margin-bottom: 20px;
+    @media(max-width: 799px) {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    @media(max-width: 599px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+.footer__contact-link {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222222;
+    @media(max-width: 799px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    @media(max-width: 599px) {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+.footer__contact-link:not(:last-child){
+    margin: 0px 0px 10px 0px;
+    @media(max-width: 599px) {
+        margin: 0px 0px 5px 0px;
+    }
+}
+.footer__allrights {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #222222;
+    @media(max-width: 799px) {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    @media(max-width: 599px) {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}

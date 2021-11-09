@@ -1,5 +1,8 @@
 .about {
     margin-bottom: 100px;
+    @media(max-width: 599px) {
+        margin-bottom: 50px;
+    }
 }
 .about__container {
     text-align: center;
