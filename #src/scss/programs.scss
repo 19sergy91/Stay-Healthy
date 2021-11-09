@@ -171,10 +171,6 @@
     cursor: pointer;
     transition: all 0.2s ease 0s;
     z-index: 5;
-    @media(max-width: 726px) {
-        width: 30px;
-        height: 30px;
-    }
 }
 /* Стрелка влево */
 .slick-arrow.slick-prev{
