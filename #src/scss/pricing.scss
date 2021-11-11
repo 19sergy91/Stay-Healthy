@@ -254,3 +254,20 @@
         margin-top: 10px;
     }
 }
+.block__btn::after {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    border-radius: 28px;
+    content: 'Workout Now';
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+    color: #fff;
+    background: linear-gradient(97.1deg, #688096 11.99%, #0019a5 96.6%);
+}
+.block__btn:hover::after {
+    opacity: 1;
+}

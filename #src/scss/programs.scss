@@ -125,7 +125,7 @@
         height: 20px;
         margin-left: 10px;
         cursor: pointer;
-        transition: all 0.2s ease 0s;
+        transition: all 0.3s ease 0s;
     }
     button:hover {
         background-color: #1f619f52;
@@ -138,6 +138,13 @@
         justify-content: space-evenly;
         margin: 20px 0px 0px 0px;
     }
+}
+.slider__link-title {
+    transition: all 0.3s ease 0s;
+}
+.slider__link-title:hover {
+    color: #7d83a7;
+    text-decoration: underline;
 }
 
 

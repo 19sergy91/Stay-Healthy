@@ -116,11 +116,16 @@
     font-size: 18px;
     line-height: 27px;
     color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
     @media(max-width: 949px) {
         width: 120px;
         height: 40px;
         font-size: 16px;
     }
+}
+.address__entry-btn:hover {
+    color: #000000;
 }
 .join__icons {
     display: flex;

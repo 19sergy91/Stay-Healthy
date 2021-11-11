@@ -134,6 +134,7 @@ body ._lock {
   font-weight: 300;
   line-height: 21px;
   color: #FFFFFF;
+  transition: all 0.3s ease 0s;
 }
 @media (max-width: 799px) {
   .menu__link {
@@ -143,8 +144,14 @@ body ._lock {
   }
 }
 
+.menu__link:hover {
+  text-decoration: underline;
+  color: #1F629F;
+}
+
 .header__join-btn {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   width: 157px;
@@ -154,6 +161,7 @@ body ._lock {
   line-height: 27px;
   font-size: 18px;
   color: #fff;
+  transition: all 0.3s ease 0s;
 }
 @media (max-width: 799px) {
   .header__join-btn {
@@ -170,6 +178,25 @@ body ._lock {
     height: 30px;
     font-size: 14px;
   }
+}
+
+.header__join-btn::after {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  border-radius: 28px;
+  content: "Join Now";
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+  color: #fff;
+  background: linear-gradient(97.1deg, #688096 11.99%, #0019a5 96.6%);
+}
+
+.header__join-btn:hover::after {
+  opacity: 1;
 }
 
 /*----------Burger Menu----------*/
@@ -355,6 +382,7 @@ body ._lock {
 
 .page-block__btn {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   width: 157px;
@@ -364,6 +392,7 @@ body ._lock {
   line-height: 27px;
   font-size: 18px;
   color: #fff;
+  transition: all 0.3s ease 0s;
 }
 @media (max-width: 799px) {
   .page-block__btn {
@@ -380,9 +409,33 @@ body ._lock {
   }
 }
 
+.page-block__btn::after {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  border-radius: 28px;
+  content: "Join Now";
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+  color: #fff;
+  background: linear-gradient(97.1deg, #688096 11.99%, #0019a5 96.6%);
+}
+
+.page-block__btn:hover::after {
+  opacity: 1;
+}
+
 .page-block__btn_border {
   background: none;
   border: 1px solid #FFFFFF;
+}
+
+.page-block__btn_border::after {
+  content: "";
+  background: none;
 }
 
 .page-block__video {
@@ -570,7 +623,7 @@ body ._lock {
   height: 20px;
   margin-left: 10px;
   cursor: pointer;
-  transition: all 0.2s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 .slider__link button:hover {
   background-color: #1f619f52;
@@ -584,6 +637,15 @@ body ._lock {
     justify-content: space-evenly;
     margin: 20px 0px 0px 0px;
   }
+}
+
+.slider__link-title {
+  transition: all 0.3s ease 0s;
+}
+
+.slider__link-title:hover {
+  color: #7d83a7;
+  text-decoration: underline;
 }
 
 /* Слайдер */
@@ -887,6 +949,7 @@ body ._lock {
 }
 
 .nutritions__info-btn {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -912,6 +975,25 @@ body ._lock {
     height: 30px;
     font-size: 14px;
   }
+}
+
+.nutritions__info-btn::after {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  border-radius: 28px;
+  content: "Join Now";
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+  color: #fff;
+  background: linear-gradient(97.1deg, #688096 11.99%, #0019a5 96.6%);
+}
+
+.nutritions__info-btn:hover::after {
+  opacity: 1;
 }
 
 @media (max-width: 899px) {
@@ -1252,6 +1334,25 @@ body ._lock {
   }
 }
 
+.block__btn::after {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  border-radius: 28px;
+  content: "Workout Now";
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+  color: #fff;
+  background: linear-gradient(97.1deg, #688096 11.99%, #0019a5 96.6%);
+}
+
+.block__btn:hover::after {
+  opacity: 1;
+}
+
 .about {
   margin-bottom: 100px;
 }
@@ -1446,12 +1547,14 @@ body ._lock {
 }
 
 .info-top__title {
+  display: block;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
   text-transform: capitalize;
   color: #161D2F;
   padding-left: 100px;
+  transition: all 0.3s ease 0s;
 }
 @media (max-width: 599px) {
   .info-top__title {
@@ -1465,6 +1568,10 @@ body ._lock {
     line-height: 20px;
     padding-left: 80px;
   }
+}
+
+.info-top__title:hover {
+  color: #1F629F;
 }
 
 .info-top__subtitle {
@@ -1519,6 +1626,7 @@ body ._lock {
 }
 
 .info-bottom__title {
+  display: block;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -1714,6 +1822,8 @@ body ._lock {
   font-size: 18px;
   line-height: 27px;
   color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 @media (max-width: 949px) {
   .address__entry-btn {
@@ -1721,6 +1831,10 @@ body ._lock {
     height: 40px;
     font-size: 16px;
   }
+}
+
+.address__entry-btn:hover {
+  color: #000000;
 }
 
 .join__icons {
@@ -1776,9 +1890,10 @@ body ._lock {
 }
 @media (max-width: 599px) {
   .footer__content {
-    padding-top: 150px;
+    padding-top: 170px;
     width: 100%;
     display: flex;
+    justify-content: space-evenly;
   }
 }
 
@@ -1790,6 +1905,7 @@ body ._lock {
   .footer__info {
     position: absolute;
     top: 0;
+    padding: 0;
   }
 }
 
@@ -1858,6 +1974,11 @@ body ._lock {
   flex-direction: column;
   padding: 0px 10px;
 }
+@media (max-width: 799px) {
+  .footer__product {
+    padding: 0;
+  }
+}
 
 .footer__product-title {
   font-weight: 500;
@@ -1885,6 +2006,7 @@ body ._lock {
   font-size: 16px;
   line-height: 24px;
   color: #222222;
+  transition: all 0.3s ease 0s;
 }
 @media (max-width: 799px) {
   .footer__product-link {
@@ -1897,6 +2019,11 @@ body ._lock {
     font-size: 12px;
     line-height: 15px;
   }
+}
+
+.footer__product-link:hover {
+  text-decoration: underline;
+  color: #1F629F;
 }
 
 .footer__product-link:not(:last-child) {
@@ -1940,6 +2067,7 @@ body ._lock {
   font-size: 16px;
   line-height: 24px;
   color: #222222;
+  transition: all 0.3s ease 0s;
 }
 @media (max-width: 799px) {
   .footer__explore-link {
@@ -1952,6 +2080,11 @@ body ._lock {
     font-size: 12px;
     line-height: 15px;
   }
+}
+
+.footer__explore-link:hover {
+  text-decoration: underline;
+  color: #1F629F;
 }
 
 .footer__explore-link:not(:last-child) {
@@ -1967,6 +2100,11 @@ body ._lock {
   display: flex;
   flex-direction: column;
   padding: 0px 10px;
+}
+@media (max-width: 799px) {
+  .footer__contact {
+    padding: 0;
+  }
 }
 
 .footer__contact-title {
@@ -1995,6 +2133,7 @@ body ._lock {
   font-size: 16px;
   line-height: 24px;
   color: #222222;
+  transition: all 0.3s ease 0s;
 }
 @media (max-width: 799px) {
   .footer__contact-link {
@@ -2007,6 +2146,11 @@ body ._lock {
     font-size: 12px;
     line-height: 15px;
   }
+}
+
+.footer__contact-link:hover {
+  text-decoration: underline;
+  color: #1F629F;
 }
 
 .footer__contact-link:not(:last-child) {
